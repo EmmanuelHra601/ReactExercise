@@ -3,6 +3,7 @@ const Prueba = () =>{
     <div>
       <h1>Agregamos un div</h1>
       <p>Agregamos cambios un parrafo</p>
+      <p>Cerramos el proyecto y agregamos nuevas lineas</p>
     </div>
   )
 }
