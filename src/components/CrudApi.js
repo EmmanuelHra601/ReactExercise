@@ -5,6 +5,7 @@ import CrudForm from "./CrudForm";
 import CrudTable from "./CrudTable";
 import Loader from "./Loader";
 import Message from "./Message";
+import Resizer from "react-image-file-resizer"
 
 const CrudApi = () => {
   const [db, setDb] = useState(null);
@@ -14,6 +15,10 @@ const CrudApi = () => {
 
   let api = helpHttp();
   let url = "http://localhost:5000/santos";
+
+  Resizer.imageFileResizer(
+    
+  )
 
   useEffect(() => {
     setLoading(true);
@@ -94,6 +99,7 @@ const CrudApi = () => {
   return (
     <div>
       <h2>CRUD API</h2>
+      {/*<img src="https://assets-es.imgfoot.com/media/cache/1200x1200/pep-guardiola-2223-x.jpg" alt="not found"/> */}
       <article className="grid-1-2">
         <CrudForm
           createData={createData}
